@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <header class="header">
+    <div class="body__wrapper">
+        <header class="header">
         <h1 class="header__title">NutriMarket</h1>
         <nav class="header__navbar">
             <a href="#">Productos</a>
@@ -23,7 +24,8 @@
             </a>
         </div>
     </header> 
-    <main>
+
+    <main class="main">
         <section class="hero">
             <div class="hero__wrap">
                  <h2 class="hero__title">Energía natural para tu día a día</h2>
@@ -59,7 +61,7 @@
             </div>
         </section>
 
-      <!-- <section class="favorite">
+      <section class="favorite">
            <header class="favorite__header">
              <h2 class="favorite__header-title">Nuestros favoritos</h2>
            </header>
@@ -97,8 +99,68 @@
                 <button></button>
             </article>
            </div>
-        </section>-->
+        </section>
 
-    </main> 
+        <section class="benefit">
+            <div class="benefit__item">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M195-195q-35-35-35-85H60l18-80h113q17-19 40-29.5t49-10.5q26 0 49 10.5t40 29.5h167l84-360H182l4-17q6-28 27.5-45.5T264-800h456l-37 160h117l120 160-40 200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H400q0 50-35 85t-85 35q-50 0-85-35Zm442-245h193l4-21-74-99h-95l-28 120Zm-19-273 2-7-84 360 2-7 34-146 46-200ZM20-427l20-80h220l-20 80H20Zm80-146 20-80h260l-20 80H100Zm180 333q17 0 28.5-11.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 17 11.5 28.5T280-240Zm400 0q17 0 28.5-11.5T720-280q0-17-11.5-28.5T680-320q-17 0-28.5 11.5T640-280q0 17 11.5 28.5T680-240Z"/></svg>
+                </span>
+                <h3 class="category__title">Envío gratis</h3>
+                <p>En todas tus compras superiores a $30.</p>
+            </div>
+            
+            <div class="benefit__item">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg>
+                </span>
+                <h3 class="category__title">100% Orgánico y Fresco</h3>
+                <p>Selección artesanal de la mejor cosecha.</p>
+            </div>
+
+            <div class="benefit__item">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m368-592 89-147-59-98q-12-20-34.5-20T329-837l-98 163 137 82Zm387 272-89-148 139-80 64 107q11 17 12 38t-9 39q-10 20-29.5 32T800-320h-45ZM640-40 480-200l160-160v80h190l-58 116q-11 20-30 32t-42 12h-60v80Zm-387-80q-20 0-36.5-10.5T192-158q-8-16-7.5-33.5T194-224l34-56h172v160H253Zm-99-114L89-364q-9-18-8.5-38.5T92-441l16-27-68-41 219-55 55 220-69-42-91 152Zm540-342-219-55 69-41-125-208h141q21 0 39.5 10.5T629-841l52 87 68-42-55 220Z"/></svg>
+                </span>
+                <h3 class="category__title">Envases Compostables</h3>
+                <p>Cuidamos de ti y del planeta en cada detalle.</p>
+            </div>
+        </section>
+        <h2>Únete a nuestra comunidad</h2>
+        <p>Suscribete y recibe un 10% de descuento en tu primer pedido</p>
+        <form>
+            <input type="email" placeholder="Tu correo electronico">
+            <button type="submit">Suscribirme</button>
+        </form>
+
+    </main>
+    <footer>
+        <section>
+            <h2>NutriMarket</h2>
+            <p>2026 Nutrimarket. Energía natural para tu día a día.</p>
+        </section>
+
+        <section>
+            <h3>Comprar</h3>
+            <a>Productos</a>
+            <a>Packs</a>
+            <a>Mixes</a>
+        </section>
+
+        <section>
+            <h3>Empresa</h3>
+            <a>About</a>
+            <a>Blog</a>
+            <a>Contact</a>
+        </section>
+
+        <section>
+            <h3>Legal</h3>
+            <a>Privacy Policy</a>
+            <a>Terms of Service</a>
+            <a>Cookies</a>
+        </section>
+    </footer> 
+    </div>
 </body>
 </html>
