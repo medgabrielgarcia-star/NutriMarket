@@ -26,11 +26,12 @@
     color: #1b1c19;
 }
 
-.header__navbar{
+.navbar__list{
     display: flex;
     gap: 40px;
     padding: 10px;
     color: #1b1c19;
+    list-style: none;
 }
 
 .navbar__link{
@@ -42,6 +43,10 @@
 .navbar__link:hover{
     border-bottom: 3px solid #d97b4a;
     border-radius: 6px;
+}
+
+.barra{
+    display: none;
 }
 
 .header__right{
@@ -61,11 +66,42 @@
 }
 
 
-@media only screen and (max-device-width: 530px){
+@media only screen and (max-width: 530px){
 
-    .header__navbar{
-        display: none;
+    .header__title{
+        position: relative;
+        top:0;
+        z-index: 20;
     }
+    .header__navbar{
+        display: none; /* Por defecto, el menú está oculto */background-color: #fff9;
+        width: 100%; /* Ancho similar al de tu imagen */
+        position: absolute;
+        top: 72px; 
+        right: 0;
+        z-index: 5;
+    }
+
+    .header__navbar a{
+        display: block;
+        padding: 12px 20px;
+        color: #333;
+        text-decoration: none;
+        border: none;
+    }
+
+    .navbar__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar__list li:hover{
+        border-bottom: 1px solid black;
+    }
+
     .header__right{
         display: none;
     }
@@ -73,6 +109,20 @@
     .toggle{
         display: block;
     }
+
+    .navbar__link:hover{
+    border: none;
+    border-radius: none;
+}
+
+    .header__navbar.active {
+        /*display: block; Muestra el menú cuando tiene la clase 'active' */
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        outline: none;
+}
 
 }
 
