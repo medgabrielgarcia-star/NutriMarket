@@ -10,6 +10,7 @@
     flex-direction: column;
     background-color: #fbf9f4;
     color: #1b1c19;
+    width: 100vw;
 }
 
 /*------ HEADER -------*/
@@ -66,18 +67,21 @@
 }
 
 
-@media only screen and (max-width: 530px){
-
+@media only screen and (max-width: 640px){
+    .header{
+        justify-content: space-around;
+        gap: 15px;
+    }
     .header__title{
         position: relative;
         top:0;
         z-index: 20;
     }
     .header__navbar{
-        display: none; /* Por defecto, el menú está oculto */background-color: #fff9;
+        display: none; /* Por defecto, el menú está oculto */background-color: #fffc;
         width: 100%; /* Ancho similar al de tu imagen */
         position: absolute;
-        top: 72px; 
+        top: 66px; 
         right: 0;
         z-index: 5;
     }
@@ -123,7 +127,9 @@
         border: none;
         outline: none;
 }
+}
 
+@media only screen and (min-width: 641px) and (max-width: 1024px){
 }
 
 /*----- HERO --------*/
@@ -307,7 +313,7 @@
     align-self: flex-end;
     margin: 10px;
     aspect-ratio: 1 / 1;
-    background-color: #f1f1f1f;
+    background-color: #f1f1f1;
     border: none;
     border-radius: 50%;
     display: flex;
@@ -399,7 +405,7 @@
 
 .comunity__input{
     border-radius: 15px;
-    width: 300px;
+    width: 350px;
     padding: 25px;
     font-size: 1.3rem;
     outline: none;
